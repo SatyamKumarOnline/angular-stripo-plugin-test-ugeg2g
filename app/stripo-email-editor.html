@@ -1,0 +1,29 @@
+<div fxFlex fxLayout="column">
+  <!-- HEADER -->
+  <div class="header" fxLayout="column">
+      <span>STRIPO PLUGIN TEST</span><br>
+      <span>To use this, you will need to *temporarily* enter your pluginId and secretKey into the stripo-auth.service file.<br><br>
+        If you create a fork, be sure not to leave your creds stored on stackblitz!!!
+      </span><br>
+  </div>
+  <!-- / HEADER -->
+
+
+  <!-- STRIPO PLUGIN CONTAINERS -->
+  <div id="externalSystemContainer">
+    <!--This is external system container where you can place plugin buttons -->
+    <button id="undoButton" class="control-button">Undo</button>
+    <button id="redoButton" class="control-button">Redo</button>
+    <button id="codeEditor" class="control-button">Code editor</button>
+    <span id="changeHistoryContainer" style="display: none;">Last change: <a id="changeHistoryLink"></a></span>
+  </div>
+  <div class="notification-zone"></div>
+
+  <div fxLayout="row">
+    <div fxFlex="1 0 70%" id="stripoPreviewContainer"></div>
+    <div fxFlex="1 0 30%" id="stripoSettingsContainer"></div>
+  </div>
+
+  <!-- STRIPO PLUGIN CONTAINERS -->
+
+</div>
